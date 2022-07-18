@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <!--Techniques de programmation WEB 1-->
+  <!--Projet Final-->
+  <!--William John Adam Trindade-->
+  <!--date: 2021-03-31-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Charcuterie em Casa</title>
+    <!-- Favicon-->
+    <link rel="icon" 
+    type="image/png" 
+    href="assets/img/logo_favicon/logo3.png">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/23ca1c8c45.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/projetfinal.js"></script>
+  </head>
+
+  <body>
+    <!-- PARTIE 1 : Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Image and text -->
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo_favicon/logo3.png" height="45px" class="d-inline-block align-top" alt="Charcuterie em Casa" />
+        </a>
+      </nav>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link mx-3" href="index.html"><i class="fas fa-home mx-1"></i>Accueil</a>
+          <a class="nav-item nav-link mx-3" href="techniques.html"><i class="fas fa-hotdog mx-1"></i>Techniques</a>
+          <a class="nav-item nav-link mx-3 active" href="#"><i class="fas fa-envelope mx-1"></i>Contact</a>
+          <a class="nav-item nav-link mx-3" href="about.html"><i class="fas fa-user mx-1"></i>Au sujet</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PARTIE 2 : BANNIÈRE -->
+    <section>
+      <div class="container-fluid" id="containerBanniereContact">
+        <div class="row">
+          <div class="col-lg-12 align-middle text-center">
+            <h1 class="textbaniere1">Charcuterie em Casa</h1>
+            <h2 class="textbaniere2">Contact</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PARTIE 3 : Contact form -->
+    <section>
+      <div class="container-fluid fond-claire-text-normal" id="contact">
+        <div class="row">
+          <div class="col-4 align-middle"></div>
+          <div class="col-6 align-middle">
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  
+                  <div class="col-12">
+                    <label for="ContactName">Prenom</label>
+                    <input type="email" class="form-control" id="ContactName" />
+                    <label for="ContatctEmail">Email</label>
+                    <input type="email" class="form-control" id="ContactEmail" />
+                    <label for="Message">Message</label>
+                    <textarea class="form-control" rows="10" cols="50" id="Message"></textarea>
+
+                    <button type="button" class="btn btn-primary" widh="100px" onclick="sendContact();">Envoyer</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <!-- PARTIE 10 :  Footer -->
+    <footer>
+      <div class="container-fluid social" id="footer">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 align-middle text-center">
+            
+              <a target="_blank" href="https://www.facebook.com/williamjohnadam.trindade/" rel="noopener noreferrer"><i class="fab fa-facebook mx-2"></i></a>
+              <a target="_blank" href="https://twitter.com/wjat777" rel="noopener noreferrer"><i class="fab fa-twitter-square mx-2"></i></a>
+              <a target="_blank" href="https://www.instagram.com/wjat777/" rel="noopener noreferrer"><i class="fab fa-instagram-square mx-2"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/williamtrindade/" rel="noopener noreferrer"><i class="fab fa-linkedin mx-2"></i></a>
+              <a target="_blank" href="https://www.youtube.com/user/wjat777" rel="noopener noreferrer"><i class="fab fa-youtube-square mx-2"></i></a>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

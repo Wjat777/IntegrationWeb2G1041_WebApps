@@ -1,0 +1,294 @@
+/*
+  Intégration Web 1 - Groupe 1029
+  Projet Final
+  William John Adam Trindade
+  2021-03-22
+
+*/
+
+/*Au lieu d'utiliser le font-face, j'ai m'en servi du @import https://developer.mozilla.org/fr/docs/Web/CSS/@import*/
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Prompt:wght@200&display=swap");
+
+/*Polices utilisés::after
+1 - Titrage : Hammersmith One https://fonts.google.com/specimen/Hammersmith+One#standard-styles
+2 - Text et menus: Prompt  https://fonts.google.com/specimen/Prompt#standard-styles
+
+*/
+
+body {
+  background-color: black;
+}
+
+.social {
+  background-color: #343a40 !important;
+  color: white;
+}
+
+.fond-claire-text-normal {
+  font-family: Prompt;
+  background-color: bisque;
+}
+
+#containerBanniere {
+  background-image: url("../img/home/accueil1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*border: 3px red solid; debug*/
+}
+/*Pour la version PC (>1024px) j'ai commis l'heresie de metre h1 à 3rem et h2 à 2rem*/
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.shadowTitles {
+  text-shadow: 1px 1px darkgray;
+}
+
+#paralaxaccuiel1 {
+  background-image: url("../img/tecnhiques/piqsels.com-id-jfeeg.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#paralaxaccuiel2 {
+  background-image: url("../img/tecnhiques/produit1.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#paralaxaccuiel3 {
+  background-image: url("../img/tecnhiques/piqsels.com-id-jfeeg.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#paralaxtechinique1 {
+  background-image: url("../img/tecnhiques/crues.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#paralaxtechinique2 {
+  background-image: url("../img/tecnhiques/saucisson_1.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#paralaxtechinique3 {
+  background-image: url("../img/tecnhiques/piqsels.com-id-jsmgl.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#paralaxtechinique4 {
+  background-image: url("../img/tecnhiques/produit1.jpg");
+
+  /* Set a specific height */
+  min-height: 10rem;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#containerBanniereAbout {
+  background-image: url("../img/about_contact/about.jpg");
+  background-color: bisque;
+  background-position: center;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#containerBanniereTechniques {
+  background-image: url("../img/tecnhiques/techiniques.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#containerBanniereContact {
+  background-image: url("../img/about_contact/contact.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.introduction {
+  background-color: bisque;
+  margin: 4rem 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.textbaniere1 {
+  color: whitesmoke;
+  text-shadow: 1px 1px darkgray;
+  font-family: "Hammersmith One", sans-serif;
+  margin-top: 10rem;
+}
+.textbaniere2 {
+  color: whitesmoke;
+  font-family: "Hammersmith One", sans-serif;
+  text-shadow: 1px 1px darkgray;
+  margin-bottom: 10rem;
+}
+
+/* Flaired edges */
+/* source https://www.formget.com/css-hr/*/
+hr.style-three {
+  height: 30px;
+  border-style: solid;
+  border-color: lightgreen;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.style-three:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: green;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+hr.new5 {
+  background-color: bisque;
+  border: 10px solid green;
+  border-radius: 5px;
+}
+
+.ausujet {
+  background-color: bisque;
+}
+
+/*Bootstrap personalisation Hamburger Icon*/
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("../img/logo_favicon/hamburger_icon_30x30.png");
+  background-size: 100%;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.navbar-inverse .navbar-toggler-icon {
+  background-image: url("../img/logo_favicon/hamburger_icon_30x30.png");
+  background-size: 100%;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../img/logo_favicon/hamburger_icon_30x30.png");
+  background-size: 100%;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+/*IPad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #containerBanniere {
+    background-image: url("../img/home/accueil2.jpg");
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .textbaniere1 {
+    margin-top: 2rem;
+  }
+  .textbaniere2 {
+    margin-bottom: 2rem;
+  }
+  .fond-claire-text-normal {
+    font-size: 1rem;
+  }
+  #video {
+    width: 100%;
+  }
+}
+
+/*Pixel-2*/
+@media only screen and (min-width: 411px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2.6) {
+  #containerBanniere {
+    background-image: url("../img/home/accueil3.jpg");
+  }
+  h1 {
+    font-size: 1.15rem;
+  }
+  h2 {
+    font-size: 0.83rem;
+  }
+
+  .textbaniere1 {
+    margin-top: 1rem;
+  }
+  .textbaniere2 {
+    margin-bottom: 1rem;
+  }
+  .fond-claire-text-normal {
+    font-size: 0.5rem;
+  }
+
+  #video {
+    width: 100%;
+  }
+}
